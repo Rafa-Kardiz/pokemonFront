@@ -1,0 +1,34 @@
+.main-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-radius: 20px;
+   border: 1px solid gray;
+   height: auto;
+   min-height: 380px;
+   width: 85%;
+   padding: 1rem;
+   margin: 2rem auto;
+}
+
+.paginator{
+   width: 100%;
+}
+
+.poke-card{
+   width: 90%;
+   margin: .5rem auto;
+}
+
+@media (min-width: 768px) {
+   .poke-card{
+      width: 48%;
+   }
+}
+
+@media (min-width: 992px){
+   .poke-card{
+      width: 18%;      
+   }
+}
