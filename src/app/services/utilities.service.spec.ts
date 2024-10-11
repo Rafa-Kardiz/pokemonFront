@@ -13,4 +13,10 @@ describe('UtilitiesService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('I should create a query for the pager', () => {
+    const service = TestBed.inject(UtilitiesService);
+    const result = service.calculatePaginator(20,1);
+    expect(result).toEqual('?offset=20&limit=20')
+  })
 });
