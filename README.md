@@ -1,28 +1,47 @@
-# pokemonFront
-Prueba técnica, en la cual se deben consumir los servicios de Pokémon api 
+# PokemonFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Este proyecto es una prueba técnica en la cual se consumen los servicios de la API de Pokémon. Está desarrollado utilizando **Angular 18** y **Angular Material** para la creación de componentes.
 
-## Development server
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 18.2.8.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisitos
 
-## Code scaffolding
+Antes de iniciar, asegúrate de tener instalado lo siguiente:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/) (versión compatible con Angular)
+- [Angular CLI](https://angular.io/cli)
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para comenzar a trabajar en el proyecto, sigue estos pasos:
 
-## Running unit tests
+1. Clona este repositorio en tu máquina local:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone https://github.com/tu_usuario/pokemonFront.git
+2. Accede a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias:
+   npm install
 
-## Running end-to-end tests
+## Servidor de Desarrollo
+Para iniciar un servidor de desarrollo y ver la aplicación en acción:
+1. Ejecuta el siguiente comando:
+   ng serve -o
+2. Esto abrirá la aplicación automáticamente en tu navegador en http://localhost:4200/. La aplicación se recargará automáticamente si realizas  cambios en los archivos fuente.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Compilación (Build)
 
-## Further help
+Para generar una versión lista para producción:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Ejecuta el siguiente comando:
+   ng build
+2. Los archivos compilados se encontrarán en la carpeta dist/.
+
+## Los archivos compilados se encontrarán en la carpeta dist/.
+
+1. Para ejecutar las pruebas unitarias configuradas con Karma:
+   ng test
+
+Este comando abrirá un entorno de pruebas donde se ejecutarán los tests automáticamente.
+
+## Mejoras Pendientes
+Este proyecto aún está en desarrollo y tiene áreas de mejora, como la optimización de la interfaz y la implementación de más funcionalidades. 
