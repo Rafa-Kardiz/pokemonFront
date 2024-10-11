@@ -1,1 +1,32 @@
-<p>pokemon-dialog works!</p>
+<div class="data-container">
+   <div class="image-data">
+      <img class="image-responsive" height="200" width="200" 
+      [ngSrc]="pokemonData.sprites.front_default || 'https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png'" 
+      [alt]="pokemonData.name" 
+      priority="true">
+   </div>
+   <div class="info-data">
+      <h4 class="capitalize-text">{{pokemonData.name}}</h4>
+      <hr>
+      <span><b>Pokemon type(s):</b> </span>
+      <ol class="types-list">
+         @for (pokemonType of pokemonData.types; track $index) {
+            <li>{{pokemonType.type.name}}</li>
+         } @empty {
+            <li>No types found for this pokemon</li>
+         }
+      </ol>
+      <hr>
+      <span><b>Pokemon Basic Stats: </b> </span>
+      <ol class="stats-list">
+         @for (pokemonStat of pokemonData.stats; track $index) {
+            <li>
+               <b class="capitalize-text">{{pokemonStat.stat.name}}</b>:
+               <span> {{pokemonStat.base_stat}}</span>
+            </li>
+         } @empty {
+            <li>No stats found for this pokemon</li>
+         }
+      </ol>
+   </div>
+</div>

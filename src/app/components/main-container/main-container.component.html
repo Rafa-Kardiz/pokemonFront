@@ -1,27 +1,19 @@
 <div class="main-container">
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
-   <div class="poke-card mat-elevation-z8">
-      <app-poke-card></app-poke-card>
-   </div>
+   @for (pokemon of pokemonDataList.results; track pokemon.name) {
+      <div class="poke-card mat-elevation-z8">
+         <app-poke-card [pokemonBaseData]="pokemon"></app-poke-card>
+      </div>
+   }  @empty {
+      <div>No se encontraron resultados.</div>
+   }
+
    <div class="paginator">
       <mat-paginator 
-         [length]="100"
+         [length]="pokemonDataList.count"
          [pageSize]="20"
-         [pageSizeOptions]="[10, 20, 50]">
+         [pageSizeOptions]="[20, 50, 75, 100]"
+         (page)="loadPokemon($event)"
+         >
       </mat-paginator>
    </div>
   
