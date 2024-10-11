@@ -1,8 +1,10 @@
 .footer{
    display: flex;
    width: 100%;
-   bottom: 0;
    height: 60px;
    background-color: #dadada;
    justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
 }

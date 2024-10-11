@@ -1,3 +1,8 @@
+.container-page{
+   height: auto;
+   min-height: calc(100vh - 124px - 2rem);
+}
+
 .main-container{
    display: flex;
    flex-direction: row;
